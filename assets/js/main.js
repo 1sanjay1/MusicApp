@@ -271,5 +271,11 @@ $('audio').on('ended',function() {
 });
 
 
+//toggle between current song wrapper and visualizer 
 
-
+$('.fa-arrows-alt').on('click',function() {
+    $('.fa-arrows-alt').toggleClass('disabled');
+    
+    $('#mp3_player').toggleClass('player-class');
+    
+});

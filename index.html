@@ -13,10 +13,16 @@
    
     <!-- custom css file  -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    
+    <script src="visualizer.js"> </script>
+    
 
 </head>
 
 <body>
+    
+    
+
     
     <div class="wrapper">
 
@@ -32,12 +38,19 @@
         </section>
        
 
+        <div id = "mp3_player" class="player-class">
+            <div id = "audio_box"></div>
+            <canvas id = "analyser_render"></canvas>
+        </div>
+        
         <div class="main">
 
             <header>
                 <div class="right floated user-name"> </div>
             </header>
 
+            
+            
             
 
             <section class="content">
@@ -83,14 +96,14 @@
                         </tr>
 
                     </tbody>
-                </table>
-
+                </table>        
+                
                 <div class="current-song-wrapper">
                     <img  class="current-song-image">
                     <div>
                         <p class="current-song-name"> </p>
                         <p class="current-song-album"> </p>
-                    </div>
+                    </div>    
                 </div>
 
             </section>
@@ -108,6 +121,7 @@
                       <i class="fa fa-play clickable play-icon" aria-hidden="true"></i>
                       <i class="fa fa-step-forward clickable" aria-hidden="true"></i>
                       <i class="fa fa-repeat disabled clickable" aria-hidden="true"></i>
+                      <i class="fa fa-arrows-alt clickable disabled" aria-hidden="true"></i>
                       <a href="Drum-Kit/Drum-Kit.html" target="_blank"><i class="fa fa-music disabled clickable" aria-hidden="true"></i></a>
                     </div>
 
